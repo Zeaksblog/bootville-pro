@@ -1,0 +1,255 @@
+/*
+	Theme Name: Indigo Bootville
+	Theme URI: http://www.themes.zeaks.org/themes/indigo-bootville-lite-child-theme/
+	Author: Scott Dixon
+	Author URI: http://zeaks.org
+	Description: Indigo Child theme for Bootville Lite
+	Template: bootville-lite
+	Version:        1.1
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Stylesheet is loaded in functions.php */
+
+/*--------------------------------------------------------------
+Theme customization starts here
+--------------------------------------------------------------*/
+
+
+/*
+Button Primary Colors - 	background-color: #5c6bc0;
+							    border-color: #5c6bc0;
+								
+Meta Icons -				           color: #E8EAF6;
+
+Panel Colors -     			background-color: #E8EAF6;
+										  color: #333;
+
+Navigation Colors - 		background-color: #5c6bc0;
+									   color: #ffffff;
+							    border-color: #5c6bc0;
+								
+Site title, Post title					  color: #555;
+ 								
+a:hover colors						      color: #555;
+*/
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+p, div {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Optional Quick and dirty way to remove border-radius - uncomment to use*/
+/*
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+} 
+*/
+/* add border radius to nav */
+.navbar-default {
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* Custom Navbar Colors */
+.navbar-default {
+  background-color: #3f51b5;
+  border-color: #5c6bc0;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* added to show background on menu item hover */
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #5c6bc0;
+}
+.navbar-default .navbar-toggle {
+  border-color: #5c6bc0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #5c6bc0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #5c6bc0;
+  }
+}
+
+/* primary button color */
+/* .btn-primary,
+.btn-primary:visited {
+    background-color: #3f51b5;
+    border-color: #5c6bc0;
+} */
+/* .btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #5c6bc0;
+    border-color: #5c6bc0;
+} */
+/* panel color */
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #E8EAF6;
+    color: #333;
+}
+/* change pagination background color */
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+	background-color: #5c6bc0;
+    border-color: #5c6bc0;
+}
+
+/* change meta icon color */
+.fa-clock-o,
+.fa-user,
+.fa-folder-o,
+.fa-comment-o { color: #E8EAF6 !important; }
+
+/* adjust title font color */
+.entry-title a,
+.site-title a,
+.site-description { color: #555; }
+
+.entry-title a:hover,
+.site-title a:hover,
+.entry-title a:focus,
+.site-title a:focus { color: #333; }
+
+/* top link */
+#toTop{
+	position: fixed;
+	bottom: 50px;
+	right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#toTop .fa {margin-right: 5px;}
+
+/* Jumbotron Homepage Template */
+@media screen and (min-width: 768px) {
+	.jumbotron {
+		padding-bottom: 25px;
+	}
+}
+.jumbotron .entry-title {
+	display: none;
+}
+.jumbotron .entry-content p {
+    font-size: 16px;
+    line-height: 26px;
+	font-weight: 100;
+}
+/* optional image border may cause Jumbotron image to scale slightly*/
+/* .featured-jumbo-image img {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+} */
+.container .jumbotron {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Portfolio CSS */
+.portfolio .thumbnail { margin-bottom: 35px; }
+.portfolio-button.btn-block { border-radius: 0; }
+.portfolio-item a:hover, .portfolio-item a:active, .portfolio-item a:focus { text-decoration: none; }
+.thumbnail img { padding: 0; }
+#filters { padding-bottom: 20px; }
+
+
+/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px){
+.row.jumbo-posts {
+	margin-bottom: 40px;
+} 
+	}
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){
+.row.jumbo-posts {
+	margin-bottom: 40px;
+} 
+	}
+.jumbo h4 { margin-top:5px; margin-bottom:5px; }	
+/* comments */
+.comment-details {
+    min-height: 68px;
+    text-align: left;
+    overflow: hidden;
+    border-radius: 4px;
+    padding: 5px 20px 20px;
+    border-style: solid;
+    border-width: 1px;
+	border-color: #dddddd;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+/* add to bootville lite new theme */
+/* Make sure embeds and iframes fit their containers */
+embed,
+.jumbo-portfolio-iframe iframe,
+object,
+img {
+	max-width: 100%;
+	height: auto;
+}
+.homepage-template .panel {
+	max-width: 1090px;
+	margin-left: auto;
+	margin-right: auto;
+}

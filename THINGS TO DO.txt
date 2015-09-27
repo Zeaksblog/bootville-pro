@@ -1,0 +1,11 @@
+Choose new name
+Adjust menu CSS and check background color on click submenu
+Merge with parent theme
+Check all CSS
+Check conditional iFrame css
+Add options for -
+	Footer credits
+	Meta data
+	social menu solid color or official color
+	load js and css from CDN or local
+	Information panel with links

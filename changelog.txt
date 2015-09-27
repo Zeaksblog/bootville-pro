@@ -1,0 +1,6 @@
+Indigo Bootville Lite child theme changelog.
+
+v1.1 - Added jumbotron homepage template
+	   Added border radius to Nav menu
+	   Added optional CSS, search style.css for "optional" and uncomment to use.
+v1.0 - Release
